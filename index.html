@@ -14,7 +14,7 @@
     <meta property="og:description"
         content="Regain your strength and vitality with Bioferox Organic Herbal Remedy.">
     <meta property="og:image" content="/og-image.jpg">
-    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:url" content="https://bioferox-organic-herbal-remedy.onrender.com">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Tailwind CSS -->
@@ -39,6 +39,20 @@
 
         .hover\:bg-bioferox-dark:hover {
             background-color: #047857;
+        }
+
+        /* Hero image fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -69,12 +83,16 @@
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-6">
                     Are you tired of waking up exhausted, battling stubborn body aches, stiff joints, and sleepless nights?
                 </h2>
-                <img src="/joint-pain.jpg" alt="Don't let joint pain control you. Before and after using Bioferox Joint Support."
-                    class="w-full h-auto rounded-xl shadow-2xl mb-10 mx-auto max-w-lg lg:max-w-3xl" loading="lazy">
+
+                <img src="/joint-pain.jpg"
+                    alt="Don't let joint pain control you. Before and after using Bioferox Joint Support."
+                    class="w-full h-auto rounded-xl shadow-2xl mb-10 mx-auto max-w-lg lg:max-w-3xl fade-in"
+                    loading="lazy">
 
                 <img src="/high-blood-pressure.jpg"
                     alt="Man experiencing discomfort, emphasizing ignored signs like chest pain."
-                    class="w-full h-auto rounded-xl shadow-lg mt-8 mx-auto max-w-xs lg:max-w-md" loading="lazy">
+                    class="w-full h-auto rounded-xl shadow-lg mt-8 mx-auto max-w-xs lg:max-w-md fade-in"
+                    loading="lazy">
 
                 <p class="text-lg sm:text-xl text-gray-600 mt-8 mb-8">
                     That constant weakness, discomfort in your chest, and heavy joints isn’t something you should ignore.
@@ -97,7 +115,8 @@
             <div class="max-w-3xl mx-auto text-center">
                 <img src="/diabetes.jpg"
                     alt="Woman struggling with blood sugar checks. Take back control naturally with Bioferox."
-                    class="w-full h-auto rounded-xl shadow-2xl mb-10 mx-auto max-w-lg" loading="lazy">
+                    class="w-full h-auto rounded-xl shadow-2xl mb-10 mx-auto max-w-lg fade-in"
+                    loading="lazy">
 
                 <p class="text-sm font-semibold uppercase tracking-wider text-bioferox-green mb-3">
                     Imagine The Change
@@ -126,7 +145,8 @@
                 </p>
 
                 <img src="/ulcer.jpg" alt="Tired of Ulcer Now! Bioferox Fibre supplement."
-                    class="w-full h-auto rounded-xl shadow-2xl mb-8 mx-auto max-w-sm" loading="lazy">
+                    class="w-full h-auto rounded-xl shadow-2xl mb-8 mx-auto max-w-sm fade-in"
+                    loading="lazy">
 
                 <div class="p-6 bg-white bg-opacity-10 rounded-xl shadow-2xl">
                     <p class="text-lg">
@@ -144,7 +164,7 @@
                 <h3 class="text-3xl font-bold text-gray-900 mb-8">Real People. Real Relief.</h3>
                 <div class="rounded-xl overflow-hidden shadow-2xl max-w-lg mx-auto">
                     <img src="/testimonial.jpg" alt="Testimonial: I can finally walk without pain again."
-                        class="w-full h-auto object-cover" loading="lazy">
+                        class="w-full h-auto object-cover fade-in" loading="lazy">
                 </div>
                 <p class="text-xl italic text-gray-700 mt-6">
                     "See the testimonies of others that have been impacted."
@@ -161,7 +181,7 @@
                     Don’t wait for the pain to take over your life completely. Take the first step back to your strength today.
                 </p>
 
-                <!-- Primary CTA Button -->
+                <!-- Primary CTA Button with subtle scale animation -->
                 <a href="https://chat.whatsapp.com/HpgUOfk1UNRJnOHOe33KIp?mode=hqrt3" target="_blank"
                     rel="noopener noreferrer"
                     class="inline-block w-full sm:w-auto px-10 py-4 mb-4 text-2xl font-bold rounded-full bg-bioferox-green text-white shadow-2xl transition duration-300 transform hover:scale-105 hover:bg-bioferox-dark focus:outline-none focus:ring-4 focus:ring-green-300">
@@ -170,7 +190,7 @@
 
                 <p class="text-sm text-gray-500 mt-4">(While supplies last)</p>
 
-                <!-- Secondary Action / WhatsApp Group -->
+                <!-- Secondary WhatsApp Group -->
                 <div class="mt-8 pt-4 border-t border-gray-200">
                     <p class="text-lg text-gray-700 font-medium">
                         Join the group for free updates and wellness tips.
